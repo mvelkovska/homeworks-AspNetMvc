@@ -1,0 +1,10 @@
+﻿@using SEDC.PizzaApp.Models.ViewModels
+
+@model List<PizzaViewModel>
+
+<h2>These are all our pizzas:</h2>
+
+@foreach(PizzaViewModel pizza in Model)
+{
+                <p> @pizza.PizzaName - @pizza.PizzaPrice DEN </p>
+            }

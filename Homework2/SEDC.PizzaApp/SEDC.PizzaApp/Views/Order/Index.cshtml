@@ -1,0 +1,15 @@
+﻿@using SEDC.PizzaApp.Models.ViewModels
+@model List<OrderListViewModel>
+@*@model List<SEDC.PizzaApp.Models.ViewModels.OrdersListViewModel>  *@
+
+ 
+<h4>@ViewData["SomeMessage"]</h4>
+<h4>@ViewData["Date"]</h4>
+<h2> List of all the orders: </h2>
+
+@foreach (OrderListViewModel order in Model)
+{
+    <p>Pizza name: @order.PizzaName , User's name: @order.FullName</p>
+}
+
+

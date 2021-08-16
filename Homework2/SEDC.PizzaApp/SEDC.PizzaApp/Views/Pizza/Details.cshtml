@@ -1,0 +1,24 @@
+﻿@using SEDC.PizzaApp.Models.ViewModels
+
+@model PizzaViewModel
+
+
+<h2> Details for your pizza:</h2>
+
+@*<!--<p>@ViewBag.Pizza.PizzaName</p>--> WITH VIEWBAG*@
+@*<!--<p>@ViewBag.Pizza.PizzaPrice</p>--> WITH VIEWBAG*@
+@*<!--<p>@ViewBag.Pizza.PizzaSize</p>--> WITH VIEWBAG*@
+@*<!--<p>@ViewBag.Pizza.HasExtras</p>--> WITH VIEWBAG*@
+
+<p>Pizza name: @Model.PizzaName</p>
+<p>Pizza price: @Model.PizzaPrice DEN</p>
+<p>Pizza size: @Model.PizzaSize</p>
+
+@if (Model.HasExtras)
+{
+    <p>Has extras:YES.</p>
+}
+else
+{
+    <p>Has extras:NO.</p>
+}
