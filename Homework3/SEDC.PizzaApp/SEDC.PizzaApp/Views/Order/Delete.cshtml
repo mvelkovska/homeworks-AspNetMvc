@@ -1,0 +1,9 @@
+﻿@using SEDC.PizzaApp.Models.ViewModels
+@model OrderDetailsViewModel
+
+
+<h2> Are you sure you want to delete the order?</h2>
+
+<partial name="~/Views/Shared/Partials/_OrderDetailsPartial.cshtml"  for="@Model"/>
+
+<button>Yes</button> <button>No</button>

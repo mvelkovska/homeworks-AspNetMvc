@@ -1,0 +1,30 @@
+﻿@using SEDC.PizzaApp.Models.ViewModels
+
+@model PizzaViewModel
+
+
+<h2> Details for your pizza:</h2>
+
+<partial name="~/Views/Shared/Partials/_PizzaDetailsPartial.cshtml" for="@Model"/>
+
+<p>Pizza size: @Model.PizzaSize</p>
+
+@if (Model.HasExtras)
+{
+    <p>Has extras:YES.</p>
+}
+else
+{
+    <p>Has extras:NO.</p>
+}
+
+@if (Model.Promotion)
+{
+    <h4>This pizza is on promotion.</h4>
+}
+else
+{
+    <h4>This pizza is not on promotion.</h4>
+}
+
+<p>@DateTime.Now</p>
